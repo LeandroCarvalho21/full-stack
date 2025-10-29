@@ -4,3 +4,12 @@ git checkout nome-da-branch
 /Cria uma nova branch e já muda para ela
 git checkout -b nova-branch
 
+//Verificar o estado atual
+git status
+
+//Adicionar TODOS os arquivos modificados
+git add .
+
+//Fazer commit "Comentario"
+git commit -m "Minhas alterações"
+
