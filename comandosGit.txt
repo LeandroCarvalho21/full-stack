@@ -1,0 +1,6 @@
+//Mudar para uma branch existente
+git checkout nome-da-branch
+
+/Cria uma nova branch e já muda para ela
+git checkout -b nova-branch
+

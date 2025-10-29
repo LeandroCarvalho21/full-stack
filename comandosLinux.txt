@@ -1,0 +1,14 @@
+//comando para visualizar arquivos e diretórios mais detalhados e ver as permi
+ls -la
+
+//comando para ver arquivos e diretorios no linux
+ls
+
+//comando para saber em qual diretorio atual estou 
+pwd
+
+//comando para criar um nova pasta 
+mkdir nomeDaPasta
+
+//comando para excluir uma pasta 
+rmdir nomeDaPasta
