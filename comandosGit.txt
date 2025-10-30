@@ -24,3 +24,6 @@ git branch -a
 
 //Puxar atualizações da branch atual do remoto
 git pull origin nome-da-branch
+
+// atualiza a branch
+git marge nome da branch
