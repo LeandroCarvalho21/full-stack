@@ -21,3 +21,6 @@ git branch -r
 
 Listar todas as branches (locais e remotas)
 git branch -a
+
+//Puxar atualizações da branch atual do remoto
+git pull origin nome-da-branch
