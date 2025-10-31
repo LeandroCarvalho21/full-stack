@@ -12,3 +12,9 @@ mkdir nomeDaPasta
 
 //comando para excluir uma pasta 
 rmdir nomeDaPasta
+
+//Criar arquivo vazio
+touch arquivo.txt
+
+ //Criar com conteúdo
+ echo "Olá, mundo!" > arquivo.txt
