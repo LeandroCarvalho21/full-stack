@@ -16,5 +16,8 @@ rmdir nomeDaPasta
 //Criar arquivo vazio
 touch arquivo.txt
 
- //Criar com conteúdo
+//Criar com conteúdo
  echo "Olá, mundo!" > arquivo.txt
+
+//Mover TODOS os arquivos para uma pasta
+mv * pasta_destino/
