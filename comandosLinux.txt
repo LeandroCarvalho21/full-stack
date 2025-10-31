@@ -1,4 +1,4 @@
-//comando para visualizar arquivos e diretórios mais detalhados e ver as permi
+//comando para visualizar arquivos e diretórios mais detalhados e ver as permissões
 ls -la
 
 //comando para ver arquivos e diretorios no linux
