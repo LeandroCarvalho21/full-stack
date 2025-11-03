@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha primeira Página</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(210, 210, 210);
+            width: 100vw;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .titulo {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .container {
+            background-color: rgb(197, 197, 197);
+            height: 100vh;
+            margin: 16px;
+        }
+
+        main {
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header>
+        <div class="titulo">
+            <h1>Minhas Tarefas</h1>
+        </div>
+    </header>
+
     <div class="container">
-
-
-        <header>
-            <h1>Olá Mundo</h1>
-        </header>
-
         <main>
-            <div>
-                <marquee> Olá turma!</marquee>
-                <h2>Leandro Carvalho</h2>
-                <h3>Doris</h3>
-                <h4>Juliana</h4>
-                <h5>Bernardo</h5>
-                <h6>Ana</h6>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum dicta perferendis expedita
-                    ipsam
-                    illum
-                    commodi officia minima animi possimus accusantium perspiciatis ab quibusdam iure recusandae quo
-                    doloribus,
-                    asperiores minus?
-                </p>
+           
+            <input type="text" value="" placeholder="Digite uma tarefa" id="tarefa...">
 
-                <a href="https://www.sp.senai.br/" target="_blank">Senai</a>
+            <button>Adicionar</button>
 
-                <br>
-                <br>
 
-                <strong>Olá Rodrigo</strong>
+            <div class="ListaNOrdenada">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
 
         </main>
 
-        <footer></footer>
-    </div>
 
+        <footer>
+
+        </footer>
+    </div>
 </body>
 
 </html>
