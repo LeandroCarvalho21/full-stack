@@ -8,18 +8,20 @@
         /* página index */
 
         body {
-            background: url('../img/img5.jpg');
+            background: url('../img/img5.jpg') no-repeat;
             background-size: cover;
+
 
         }
 
         header {
-            background-color: rgb(210, 210, 210);
+            background-color: rgb(100, 100, 100);
             width: 100vw;
             height: 50px;
             display: flex;
             align-items: center;
             justify-items: center;
+            box-shadow: 0px 0px 20px rgba(0, 255, 238, 0.862);
         }
 
         .titulo {
@@ -57,10 +59,10 @@
 
         .inputTarefas {
             background-color: aliceblue;
-            max-width: 600px;
-            height: 400px;
+            max-width: 550px;
+            height: 350px;
             margin: 0 auto;
-            border-radius: 8px;
+            border-radius: 16px;
             padding: 15px;
             /* centralizando o conteudo  */
             display: flex;
@@ -102,11 +104,28 @@
 
         .divNavegacao ul li a {
             text-decoration: none;
-            color: #000;
+            color: #ffffff;
             font-size: 18px;
         }
 
+        .divNavegacao ul li a:hover {
+            color: rgb(2, 253, 240);
+        }
 
+        .card {
+            background-color: #73f5ea38;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+
+        .card li {
+            list-style-type: none;
+        }
 
         /* página test 2 */
 
