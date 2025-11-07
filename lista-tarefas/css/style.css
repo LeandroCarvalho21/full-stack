@@ -122,13 +122,40 @@
 
         }
 
+        #lista li {
+            list-style-type: none;
+            margin: 10px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+        }
+
+        .listaDeTarefas {
+            margin: 20px auto;
+            max-width: 300px;
+        }
+
+        .listaDeTarefas ul {
+            background-color: rgba(0, 255, 89, 0.154);
+            padding: 10px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .listaDeTarefas h3 {
+            font-size: 2rem ;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b2b2b279;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            
+        }
 
         .card li {
             list-style-type: none;
         }
 
 
-        .imgLink{
+        .imgLink {
             border: none;
             box-shadow: 0px 0px 10px rgb(74, 74, 74);
         }
