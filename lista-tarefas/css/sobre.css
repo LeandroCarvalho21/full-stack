@@ -68,17 +68,21 @@ header {
 .sobre {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     padding: 10px 0px;
     margin-top: 10px;
+    gap: 15px;
 }
 
 .sobreMim {
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
-    border: 1px solid #000;
-    background-color: aqua;
-    max-width: 350px;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    max-width: 250px;
+    text-align: justify;
 }
 
 .link a {

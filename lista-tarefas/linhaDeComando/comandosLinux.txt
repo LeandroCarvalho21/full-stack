@@ -1,0 +1,29 @@
+//comando para visualizar arquivos e diretórios mais detalhados e ver as permissões
+ls -la
+
+//comando para ver arquivos e diretorios no linux
+ls
+
+//comando para saber em qual diretorio atual estou 
+pwd
+
+//comando para criar um nova pasta 
+mkdir nomeDaPasta
+
+//comando para excluir uma pasta 
+rmdir nomeDaPasta
+
+//Criar arquivo vazio
+touch arquivo.txt
+
+//Criar com conteúdo
+ echo "Olá, mundo!" > arquivo.txt
+
+//Mover TODOS os arquivos para uma pasta
+mv * pasta_destino/
+
+//Mover um arquivo especifico para dentro da pasta 
+mv arquivo.txt /caminho/da/pasta/
+
+//Copiar um arquivo especifico para pasta
+cp arquivo.txt /caminho/da/pasta/
