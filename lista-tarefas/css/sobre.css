@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    /* background-color: rgb(193, 193, 193); */
+    background: url('../img/img5.jpg') no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(100, 100, 100);
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 255, 238, 0.862);
+}
+
+.container {
+    background: #ffffff60;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px 20px;
+    height: 100vh;
+}
+
+.divNavegacao ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 20px;
+    width: 100vw;
+    padding: 5px 0px;
+
+}
+
+.divNavegacao ul li {
+    list-style-type: none;
+}
+
+.divNavegacao ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.divNavegacao ul li a:hover {
+    color: rgb(2, 253, 240);
+}
+
+.container h1 {
+    padding: 10px;
+    font-size: 3rem;
+    color: rgb(104, 104, 104);
+    text-align: center;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.sobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.sobreMim {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: aqua;
+    max-width: 350px;
+}
+
+.link a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.Interesses {
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.262);
+    width: 250px;
+    margin: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 8px #000;
+}
+
+.Interesses h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome {
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: rgba(255, 228, 196, 0.347);
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 1px 8px #000;
+}
+
+.nome h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.Interesses ul li {
+    margin: 5px 0px;
+}
+
+.nome ol li {
+    margin: 5px 0px;
+}

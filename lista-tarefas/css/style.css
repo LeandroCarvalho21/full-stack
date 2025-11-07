@@ -113,7 +113,7 @@
         }
 
         .card {
-            background-color: #73f5ea38;
+            /* background-color: #73f5ea1f; */
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -125,6 +125,12 @@
 
         .card li {
             list-style-type: none;
+        }
+
+
+        .imgLink{
+            border: none;
+            box-shadow: 0px 0px 10px rgb(74, 74, 74);
         }
 
         /* página test 2 */
