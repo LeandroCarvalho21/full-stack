@@ -13,8 +13,8 @@
 
 //função para mostrar o dobro do valor que o usuário digitar. 
 function mostrarDobro(valor) {
-    document.write(`O dobro de ${numero} é ${valor * 2}`);
-    result.innerText = (`O dobro de ${numero} é ${ valor * 2}`)
+    // document.write(`O dobro de ${numero} é ${valor * 2}`);
+    result.innerText = (`O dobro de ${numero} é: ${ valor * 2}`)
 }
 
 //declaração das variaveis 
