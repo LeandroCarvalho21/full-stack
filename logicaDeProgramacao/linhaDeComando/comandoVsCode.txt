@@ -1,0 +1,6 @@
+//Comando para colocar conteudo em varias linhas ao mesmo tempo 
+Ctrl + Alt + seta (cima/baixo)
+
+//comando para identação do código (Auto-formatação)
+Alt + Shift + f
+

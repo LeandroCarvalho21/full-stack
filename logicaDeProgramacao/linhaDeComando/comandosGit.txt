@@ -1,0 +1,29 @@
+//Mudar para uma branch existente
+git checkout nome-da-branch
+
+/Cria uma nova branch e já muda para ela
+git checkout -b nova-branch
+
+//Verificar o estado atual
+git status
+
+//Adicionar TODOS os arquivos modificados
+git add .
+
+//Fazer commit "Comentario"
+git commit -m "Minhas alterações"
+
+//Lista todas as branches locais
+git branch
+
+//lista todas as branches remotas 
+git branch -r
+
+Listar todas as branches (locais e remotas)
+git branch -a
+
+//Puxar atualizações da branch atual do remoto
+git pull origin nome-da-branch
+
+// atualiza a branch
+git marge nome da branch
