@@ -30,3 +30,6 @@ mv arquivo.txt /caminho/da/pasta/
 
 //Copiar um arquivo especifico para pasta
 cp arquivo.txt /caminho/da/pasta/
+
+//Abrir o arquivo por linha de comando 
+code /pasta/nomeDoArquivo.js  ou code nomeArquivo.html
