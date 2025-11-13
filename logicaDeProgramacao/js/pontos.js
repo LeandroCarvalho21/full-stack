@@ -35,9 +35,9 @@ function mostrarTela(msg) {
 }
 
 if (pontos > 10) {
-    // result.innerText = ();
     mostrarTela(`Seu time está indo bem ele tem: ${pontos} pontos`);
 } else if (pontos < 5) {
-    // result.innerText = (`Seu time precisa melhorar ele tem: ${pontos} pontos`);
-    mostrarTela((`Seu time precisa melhorar ele tem: ${pontos} pontos`));
+    mostrarTela(`Seu time precisa melhorar ele tem: ${pontos} pontos`);
+} else {
+    mostrarTela(`Seu time esta no caminho ${pontos} pontos`);
 }
