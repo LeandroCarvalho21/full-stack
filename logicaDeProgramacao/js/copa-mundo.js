@@ -12,14 +12,12 @@
 //         anoInicio ← anoInicio + 4
 //     FimEnquanto
 // Fim
-
-
 const anoAtual = 2025;
-let anoInicio = Number(prompt("Digite o ano da primeira Copa do Mundo que você viu:"))
+let anoInicio = Number(prompt("Digite o ano da primeira Copa do Mundo que você viu:"));
 
 while (anoInicio <= anoAtual) {
-    anoInicio = anoInicio + 4;
     console.log(`Copa: ${anoInicio}`);
+    anoInicio = anoInicio + 4;
 }
 
 
