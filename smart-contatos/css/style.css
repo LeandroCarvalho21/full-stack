@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.464);
+}
+
+.container{
+    /* background: url(""); */
+    background-color: cornflowerblue;
+}
+
+.titleH1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    color: #fff;
+    
+}
+
+.form{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    align-items: center;
+    padding: 15px 0px;
+}
