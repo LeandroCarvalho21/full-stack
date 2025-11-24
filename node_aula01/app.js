@@ -10,10 +10,23 @@ const produtos = [
 ];
 
 //criar função 
-//rota principal 
+
+//rota principal
 app.get('/', (req, res) => {
-    res.send('Bem vindo ao servidor node.js');
+    res.send('Bem vindo ao servidor node.js fdfdfdf');
 })
+
+//rota produtos
+app.get('/produtos', (req, res) => {
+    res.send(produtos);
+})
+
+//rota home
+app.get('/home', (req, res) => {
+    res.sendFile(__dirname+'/public/home.html');
+    // console.log("Olá:",__dirname)
+})
+
 
 //execultando o servidor 
 app.listen(port, () => {
