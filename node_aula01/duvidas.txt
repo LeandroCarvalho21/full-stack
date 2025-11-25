@@ -1,0 +1,11 @@
+metodos http
+get = busca / obter dados
+post = envia dados
+put = atualiza todos os dados 
+patch = atualiza parciamente os dados
+delete = deleta os dados
+
+--------------------------------
+
+req = requisição
+res = resposta 
