@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/img1.jpg) no-repeat center center;
+    padding: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+
+header h2 {
+    font-size: 56px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px #000;
+}
+
+#close {
+    display: none;
+    text-align: center;
+}
+
+.menu_close {
+    text-align: center;
+
+}
+
+.title h3 {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 20px;
+}

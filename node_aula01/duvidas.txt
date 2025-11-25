@@ -9,3 +9,10 @@ delete = deleta os dados
 
 req = requisição
 res = resposta 
+
+
+não devemos enviar os arquivos node_modules para o git 
+
+criar a pasta do css dentro da pasta public
+
+para não subir a pasta node_modules para o github devemos colocar nome dela dentro do arquivo .gitignore
