@@ -13,14 +13,29 @@ const nomes = [
     { id: 5, nome: "Doris", idade: "33" },
 ];
 
-app.listen(PORT, () => {
-    console.log(`Servidor rodando no endereço http://localhost:${PORT}`);
+//criando função auxiliares
+//retornar o objeto por ID
+function buscarNomePorId(id) {
+    return nomes.filter((nome) => nome.id == id)
+}
+
+app.get('/', (req, res) => {
+    res.send("Rota Principal.");
 });
 
 app.get('/teste', (req, res) => {
     res.send("API nodePeople está funcionando!");
 });
 
-app.get('/nomes', (req, res) => {
+app.get('/listaNomes', (req, res) => {
     res.send(nomes);
+});
+
+app.get('/listaNomes/:id', (req, res) => {
+    let index = req.params.id;
+    res.json(buscarNomePorId(index));
 })
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando no endereço http://localhost:${PORT}`);
+});
