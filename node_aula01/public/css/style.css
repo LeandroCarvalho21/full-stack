@@ -43,11 +43,13 @@ header h2 {
 
 }
 
+
 nav ul {
     display: none;
     flex-direction: column;
     gap: 5px;
-
+    background-color: aqua;
+    
 }
 
 nav ul li {
