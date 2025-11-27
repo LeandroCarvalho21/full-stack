@@ -16,7 +16,12 @@ const nomes = [
 //criando função auxiliares
 //retornar o objeto por ID
 function buscarNomePorId(id) {
-    return nomes.filter((nome) => nome.id == id)
+    return nomes.filter((nome) => nome.id == id);
+};
+
+//pegar a posição ou index do elemento por Array por id 
+function deleteNomePorId(id) {
+    return nomes.findIndex((nome) => nome.id == id);
 }
 
 app.get('/', (req, res) => {
@@ -31,9 +36,17 @@ app.get('/listaNomes', (req, res) => {
     res.send(nomes);
 });
 
+//rota para buscar por ID 
 app.get('/listaNomes/:id', (req, res) => {
     let index = req.params.id;
     res.json(buscarNomePorId(index));
+})
+
+//rota para excluir
+app.delete('/listaNomes/:id', (req, res) => {
+    let index = deleteNomePorId(req.params.id);
+    nomes.splice(index, 1);
+    res.send(`Nomes por Id ${req.params.id} excluida com sucesso`);
 })
 
 app.listen(PORT, () => {
