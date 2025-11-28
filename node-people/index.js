@@ -79,6 +79,14 @@ app.post("/listaNomes", (req, res) => {
     res.status(201).send('Nomes cadastrado com sucesso!');
 })
 
+//alterar nome e idade por Id
+app.put("/listaNomes/:id", (req, res) => {
+    let index = buscarIdNomes(req.params.id);
+    nomes[index].nome = req.body.nome;
+    nomes[index].idade = req.body.idade;
+    res.json(nomes)
+})
+
 //Rota para excluir
 app.delete('/listaNomes/:id', (req, res) => {
     let id = req.params.id;
@@ -114,6 +122,18 @@ app.post("/todosTimes", (req, res) => {
     times.push(req.body);
     res.status(201).send("Time cadastrado");
 });
+
+// alterar valor dos times por id 
+app.put("/todosTimes/:id", (req, res) => {
+
+
+    let index = buscarIdTimes(req.params.id);
+    times[index].time = req.body.time;
+    times[index].estado = req.body.estado;
+    times[index].titulos = req.body.titulos;
+
+    res.json(times)
+})
 
 //rota para deletar times 
 app.delete("/todosTimes/:id", (req, res) => {
