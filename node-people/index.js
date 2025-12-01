@@ -123,15 +123,13 @@ app.post("/todosTimes", (req, res) => {
     res.status(201).send("Time cadastrado");
 });
 
+
 // alterar valor dos times por id 
 app.put("/todosTimes/:id", (req, res) => {
-
-
     let index = buscarIdTimes(req.params.id);
-    times[index].time = req.body.time;
+    times[index].nome = req.body.nome;
     times[index].estado = req.body.estado;
     times[index].titulos = req.body.titulos;
-
     res.json(times)
 })
 
