@@ -1,3 +1,9 @@
+import express from "express";
+
+const app = express();
+
+app.use(express.json());
+
 const cadastros = [
     {
         id: 1,
@@ -28,20 +34,57 @@ const cadastros = [
     }
 ];
 
-import express from "express";
-const app = express();
+//função auxiliar para retornar objeto por Id
+function buscarObjetoPorId(id) {
+    return cadastros.filter((nome) => nome.id == id);
+};
+
+//função auxiliar para pegar a posição do objeto dentro do array
+function pegarIndexDoObjeto(id) {
+    return cadastros.findIndex((nome) => nome.id == id);
+}
 
 app.get("/", (req, res) => {
     res.send("Olá node.js");
-    
 });
 
-app.post("/cadastro", (req, res) => {
+app.get("/todosCadastros", (req, res) => {
+    res.send(cadastros);
+});
+
+app.get("/todosCadastros:id", (req, res) => {
+    const nomes = buscarObjetoPorId(req.params.id);
+    if (!nomes) {
+        return res.status(404).send("teste");
+    }
+    res.json(nomes);
+})
+
+app.post("/cadastros", (req, res) => {
     cadastros.push(req.body);
-    res.status(201).send("Usuário cadastrado")
+    res.status(201).send("Usuário cadastrado");
 });
 
+app.put("/todosCadastros:id", (req, res) => {
+    let index = pegarIndexDoObjeto(req.params.id);
+    nome[index].nome = req.body.nome;
+    nome[index].telefone = req.body.telefone;
+    nome[index].cpf = req.body.cpf;
+    nome[index].email = req.body.email;
+    nome[index].idade = req.body.idade;
+    nome[index].endereco = req.body.endereco;
+    res.json(cadastros);
+});
 
+app.delete("/todosCadastros/:id", (req, res) => {
+    let id = req.params.id;
+    let index = pegarIndexDoObjeto(id);
+    if (index === -1) {
+        return res.status(404).send(`Nenhum nome com Id: ${id} foi encontrado`);
+    }
+    nome.splice(index, 1);;
+    res.send(`Nome por Id: ${id} excluido com sucesso`);
 
+})
 
 export default app;
