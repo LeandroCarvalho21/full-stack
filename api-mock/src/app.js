@@ -67,12 +67,12 @@ app.post("/cadastros", (req, res) => {
 
 app.put("/todosCadastros:id", (req, res) => {
     let index = pegarIndexDoObjeto(req.params.id);
-    nome[index].nome = req.body.nome;
-    nome[index].telefone = req.body.telefone;
-    nome[index].cpf = req.body.cpf;
-    nome[index].email = req.body.email;
-    nome[index].idade = req.body.idade;
-    nome[index].endereco = req.body.endereco;
+    cadastros[index].nome = req.body.nome;
+    cadastros[index].telefone = req.body.telefone;
+    cadastros[index].cpf = req.body.cpf;
+    cadastros[index].email = req.body.email;
+    cadastros[index].idade = req.body.idade;
+    cadastros[index].endereco = req.body.endereco;
     res.json(cadastros);
 });
 
@@ -82,7 +82,7 @@ app.delete("/todosCadastros/:id", (req, res) => {
     if (index === -1) {
         return res.status(404).send(`Nenhum nome com Id: ${id} foi encontrado`);
     }
-    nome.splice(index, 1);;
+    cadastros.splice(index, 1);;
     res.send(`Nome por Id: ${id} excluido com sucesso`);
 
 })

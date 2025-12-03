@@ -1,0 +1,13 @@
+//Criar um BD
+create database sistema_produtos;
+
+//em seguida de um crtl + enter para execultar a linha digitada 
+
+-- para usar o BD --
+use sistema_produtos;
+
+//Apaga o registro 
+
+//Altera o registro 
+
+//Novo registro

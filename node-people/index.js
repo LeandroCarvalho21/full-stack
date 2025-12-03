@@ -134,7 +134,7 @@ app.put("/todosTimes/:id", (req, res) => {
 })
 
 //rota para deletar times 
-app.delete("/todosTimes/:id", (req, res) => {
+app.delete("/todosTimes:id", (req, res) => {
     let id = req.params.id;
     let index = buscarIdTimes(id);
     if (index === -1) {
