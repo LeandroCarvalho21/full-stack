@@ -22,3 +22,7 @@ insert into selecoes(selecao,grupo)value
 ('Nova Zelândia','E'),
 ('Japão','C');
 
+insert into selecoes (selecao,grupo)value
+('Belgica','A');
+
+drop table selecoes;

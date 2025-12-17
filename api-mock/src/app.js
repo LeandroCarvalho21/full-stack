@@ -3,6 +3,7 @@ import conexao from "../infra/conexao.js";
 
 const app = express();
 
+//indicar para express ler body com json
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -26,6 +27,15 @@ app.get("/selecoes/:id", (req, res) => {
     });
 })
 
+//criando post para cadastrar
+app.post("/selecoes", (req, res) => {
+    const selecao = req.body;
+    const sql = "insert into selecoes set?;"
+    conexao.query(sql, selecao, () => {
+        res.json({ mensagem: "Cadastrado com sucesso!" });
+    });
+});
+
 //Deletar por ID
 app.delete("/selecoes/:id", (req, res) => {
     const id = req.params.id;
@@ -39,5 +49,16 @@ app.delete("/selecoes/:id", (req, res) => {
         }
     });
 })
+
+//put por id 
+app.put("/selecoes/:id", (req, res) => {
+    const id = req.params.id;
+    const selecao = req.body;
+    const sql = "update selecoes set ? where id =? ";
+    conexao.query(sql, [selecao, id], () => {
+        // res.status(200).send('Time alterado');
+        res.json({ mensagem: "Atualizando com sucesso!" });
+    });
+});
 
 export default app;
